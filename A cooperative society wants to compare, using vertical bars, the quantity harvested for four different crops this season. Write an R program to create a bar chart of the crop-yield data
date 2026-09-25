@@ -1,0 +1,23 @@
+# Program to create a Bar Chart for Crop Yield
+
+# Crop names
+crops <- c("Rice", "Wheat", "Corn", "Sugarcane")
+
+# Quantity harvested
+yield <- c(120, 90, 150, 110)
+
+# Display the data
+print("Crop Yield Data:")
+print(yield)
+
+# Create vertical bar chart
+barplot(yield,
+        names.arg = crops,
+        main = "Crop Yield Comparison",
+        xlab = "Crops",
+        ylab = "Quantity Harvested",
+        col = "lightgreen",
+        border = "black")
+
+# Display message
+cat("Bar chart created successfully\n")
