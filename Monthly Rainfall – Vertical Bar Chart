@@ -1,0 +1,23 @@
+# Program to create a Bar Chart for Monthly Rainfall
+
+# Month names
+months <- c("January", "February", "March", "April")
+
+# Rainfall values in mm
+rainfall <- c(120, 80, 150, 100)
+
+# Display the data
+print("Monthly Rainfall Data:")
+print(rainfall)
+
+# Create vertical bar chart
+barplot(rainfall,
+        names.arg = months,
+        main = "Monthly Rainfall Comparison",
+        xlab = "Months",
+        ylab = "Rainfall in mm",
+        col = "skyblue",
+        border = "black")
+
+# Display message
+cat("Rainfall bar chart created successfully\n")
