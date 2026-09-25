@@ -1,0 +1,23 @@
+# Program to Convert Celsius to Fahrenheit
+
+# Function for temperature conversion
+celsiusToFahrenheit <- function(celsius) {
+  
+  # Formula for conversion
+  fahrenheit <- (celsius * 9 / 5) + 32
+  
+  cat("================================\n")
+  cat("   TEMPERATURE CONVERSION\n")
+  cat("================================\n")
+  cat("Temperature in Celsius    :", celsius, "C\n")
+  cat("Temperature in Fahrenheit :", fahrenheit, "F\n")
+  cat("================================\n")
+  
+  return(fahrenheit)
+}
+
+# Given temperature
+temperature <- 25
+
+# Calling the function
+result <- celsiusToFahrenheit(temperature)
