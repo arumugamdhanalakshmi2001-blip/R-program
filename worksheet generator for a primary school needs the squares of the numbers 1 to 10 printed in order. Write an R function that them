@@ -1,0 +1,18 @@
+# Function to print squares of numbers 1 to 10
+
+squareNumbers <- function(n) {
+  
+  cat("Squares of Numbers from 1 to", n, "\n")
+  cat("--------------------------------\n")
+  
+  for(i in 1:n) {
+    square <- i * i
+    cat("Number =", i, "  Square =", square, "\n")
+  }
+  
+  cat("--------------------------------\n")
+  cat("Squares printed successfully!\n")
+}
+
+# Calling the function
+squareNumbers(10)
